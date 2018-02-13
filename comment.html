@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru"> 
+    <link href="..\css\reset.css" rel="stylesheet">
+    <link href="..\css\style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/buttons.css">
+    <link rel="shortcut icon" href="../resource/icon.png" type="image/x-icon">
+    <script src="../js/script.js"></script>  
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>MaxioN</title>
+    <script>
+        db = openDatabase("commentsDB", "0.1", "A list of comments", 200000);
+
+        $(document ).ready(function() {
+        $( "input[id='name']" ).focus(function() {
+        $("input[id='name']").css("background" , "white");       
+        });
+        });
+    </script>
+   
+    </head>
+<body>
+
+<div id="leftPart" >
+	<ul class="bmenu">
+        <form>
+<input type="text" id="name" placeholder=" Name" class="but bg-1 button--size-l button--text-upper button--text-thin button--border-medium button--winona anyCase"></input><br><br>
+<textarea  id="comment" placeholder="Comment" class="but bg-1 button--size-l button--text-upper button--text-thin button--border-medium button--winona anyCase"></textarea><br><br>
+        
+<input type="button" id="addrec" value=" Leave comment "  onclick=" addRecord();" class="but bg-3 button--size-l button--text-upper button--text-thin button--border-medium button--winona"></input><br><br>
+<input type="reset" value=" Clear form " class="but bg-3 button--size-l button--text-upper button--text-thin button--border-medium button--winona"></input><br><br>
+<input type="button" id="showcomm" value=" Show comment " onclick="showRecords();" class="but bg-3 button--size-l button--text-upper button--text-thin button--border-medium button--winona"></input><br><br><br><br>
+</form>
+<table id="showTable" class="showTable"></table>
+	</ul>
+</div>
+<div id="rightPart" onClick="location.href = 'index.html';
+"><img src="../resource/logo.png" class="logo" height="70%" ></div>
+</body>
+</html>

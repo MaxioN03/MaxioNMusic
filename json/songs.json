@@ -1,0 +1,37 @@
+{
+  "songs": [{
+    "title": "Breeze ver. 2",
+    "album": "Unreleased",
+    "duration": "2:14",
+    "link": "MaxioN - Breeze ver. 2.mp3",
+    "genre":"Electronic"
+  },
+  {
+    "title": "Miami night way",
+    "album": "Unreleased",
+    "duration": "2:12",
+    "link":"MaxioN - Miami night way.mp3",
+    "genre":"Electronic"
+  },
+  {
+    "title": "SLO GLO FLSH",
+    "album": "Unreleased",
+    "duration": "2:26",
+    "link":"MaxioN - SLO GLO FLSH.mp3",
+    "genre":"Electronic"
+  },
+  {
+    "title": "Under your feet",
+    "album": "Unreleased",
+    "duration": "2:04",
+    "link":"MaxioN - Under your feet.mp3",
+    "genre":"Electronic"
+  },
+  {
+    "title": "Number 1",
+    "album": "Unreleased",
+    "duration": "1:09",
+    "link":"MaxioN - Number 1.mp3",
+    "genre":"Electronic"
+  }]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru"> 
+    <link href="..\css\reset.css" rel="stylesheet">
+    <link href="..\css\style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../resource/icon.png" type="image/x-icon">
+    <script src="../js/scriptSound.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        showContent();
+        function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillRect(25,25,100,100);
+    ctx.clearRect(45,45,60,60);
+    ctx.strokeRect(50,50,50,50);
+  }
+}
+        
+        draw();
+    </script>
+    <meta charset="UTF-8">
+    <title>MaxioN</title>
+</head>
+<body>
+
+<div id="leftPart" >
+    <div id="music">
+	<ul class="lmenu">     	
+    <canvas id="canvas" width="150" height="150"> 	
+	</ul>
+    </div>
+</div>
+<div id="rightPart" onClick="location.href = 'index.html';
+"><img src="../resource/logo.png" class="logo" height="70%" ></div>
+</body>
+</html>

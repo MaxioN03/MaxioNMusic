@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru"> 
+    <link href="..\css\reset.css" rel="stylesheet">
+    <link href="..\css\style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../resource/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>MaxioN</title>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>  
+    <script src="../js/aboutLoad.js"></script>
+    <script>    
+    showAbout();
+    $("#text").load('loadpages/aboutText.html');    
+    </script>
+    
+</head>
+<body>
+<div id="leftPartMain">
+    <ul class="bmenu">        
+    <h3 id="text">TEXT</h3>
+	</ul>
+</div>
+<div id="rightPart" onClick="location.href = 'index.html';">
+    <img src="../resource/logo.png" class="logo" height="70%" >
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru"> 
+    <link href="..\css\reset.css" rel="stylesheet">
+    <link href="..\css\style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../resource/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <script data-main="../js/config.js" src="../js/require.js"></script>
+    <title>MaxioN</title>
+    <script type="text/javascript">
+    function auth(){
+        if(sessionStorage.getItem('pass')!=1){
+        require(['auth','jquery'], function(auth,$){
+        auth();
+        });}
+    }
+    auth();
+    </script>
+</head>
+<body>
+<div id="content">
+<div id="leftPartMain">
+    <ul class="bmenu">        
+     	<li><a href="listen.html">Listen</a></li>
+     	<li><a href="contacts.html">Contacts</a></li>
+     	<li><a href="about.html">About</a></li> 
+        <li><a href="comment.html">Leave comment</a></li>
+	</ul>
+</div>
+<div id="rightPart" onClick="location.href = 'index.html';
+"><img src="../resource/logo.png" class="logo" height="70%" ></div>
+</div>
+</body>
+</html>
